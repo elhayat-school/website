@@ -1,9 +1,21 @@
-<div class="grid grid-cols-1 lg:grid-cols-3 w-full gap-20 ">
+<div class="grid grid-cols-1 lg:grid-cols-4 w-full gap-5 ">
 
     <x-card src="{{ asset('assets/pencils.png') }}">
 
         <x-slot:title>
-            Title
+            التحضيري
+        </x-slot:title>
+
+        <x-slot:text>
+
+        </x-slot:text>
+
+    </x-card>
+
+    <x-card src="{{ asset('assets/pencils.png') }}">
+
+        <x-slot:title>
+            الإبتدائي
         </x-slot:title>
 
         <x-slot:text>
@@ -15,7 +27,7 @@
     <x-card src="{{ asset('assets/pencils.png') }}">
 
         <x-slot:title>
-            Title
+            المتوسط
         </x-slot:title>
 
         <x-slot:text>
@@ -24,10 +36,11 @@
 
     </x-card>
 
+
     <x-card src="{{ asset('assets/pencils.png') }}">
 
         <x-slot:title>
-            Title
+            الثانوي
         </x-slot:title>
 
         <x-slot:text>

@@ -4,7 +4,7 @@
 
     @include('sections.hero')
 
-    <div class="w-full  pt-10 ">
+    <div class="w-full bg-gray-200 pt-10 ">
 
         <div class="max-w-5xl m-auto px-5 ">
 
@@ -13,6 +13,7 @@
             @include('sections.content')
 
         </div>
+
 
         @include('sections.contact-form')
 

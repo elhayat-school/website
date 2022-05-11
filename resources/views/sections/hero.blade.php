@@ -1,6 +1,6 @@
-<div class="w-full py-10 bg-gradient-to-r " style="background-image: url('assets/waves.svg')">
+<div class="w-full py-10 bg-gradient-to-r bg-cover ">
 
-    <div class="flex justify-between flex-col-reverse lg:flex-row">
+    <div class="flex  justify-between flex-col-reverse lg:flex-row">
 
         <div class=" lg:px-24 p-5 lg:w-1/2 m-auto">
 
@@ -17,7 +17,7 @@
 
         <div class="pl-5 lg:pl-0 lg:w-1/2 ">
 
-            <img class=" w-[1080px] float-right shadow-lg rounded-l-[50px]" src="{{ asset('assets/1.jpg') }}">
+            <img class=" w-[1080px] float-right shadow-2xl rounded-l-[50px] " src="{{ asset('assets/1.jpg') }}">
 
         </div>
 

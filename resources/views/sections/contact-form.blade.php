@@ -1,6 +1,6 @@
 <div class="w-screen " id="contact-us-section">
 
-    <div class="text-justify bg-gradient-to-r from-blue-500 to-cyan-500 py-10 ">
+    <div class="text-justify bg-cover"style="background-image: url('assets/waves.svg')">
         <div class="m-auto lg:max-w-6xl lg:p-0 px-4 text-white ">
             <h2 class="font-bold xl:text-4xl text-2xl">
                 Titre
