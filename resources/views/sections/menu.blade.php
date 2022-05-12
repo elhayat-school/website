@@ -84,10 +84,7 @@
                     <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"
                         href="#">Services</a>
                 </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"
-                        href="#">Pricing</a>
-                </li>
+
                 <li class="mb-1">
                     <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"
                         href="#">Contact</a>
