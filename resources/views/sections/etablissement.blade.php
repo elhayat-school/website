@@ -1,31 +1,31 @@
-<div class="max-w-6xl m-auto grid grid-cols-1 px-5 lg:grid-cols-3 gap-5 ">
+<div class=" max-w-7xl m-auto grid grid-cols-1 lg:grid-cols-3 gap-5 px-2 ">
 
-    <div class="cursor-pointer rounded-2xl shadow-2xl ">
+    <div class="cursor-pointer rounded-2xl border-2 border-sky-500 bg-white overflow-hidden ">
 
-        <img class="w-full rounded-t-2xl" src="{{ asset('assets/1.jpg') }}" alt="">
+        <img class="w-full h-1/2 " src="{{ asset('assets/1.jpg') }}" alt="">
 
-        <div class="p-4">
+        <div class="p-4 ">
             <h2 class="text-2xl font-bold text-center">
-                Titre
+                El-Hayat School
             </h2>
 
-            <div class="grid grid-cols-2 place-items-center gap-2 text-xl text-white ">
+            <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5">
 
-                <i class="rounded-full w-full text-center hover:underline bg-emerald-500 hover:bg-emerald-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Maternel
-                </i>
+                </a>
 
-                <i class="rounded-full w-full text-center hover:underline bg-purple-500 hover:bg-purple-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Primaire
-                </i>
+                </a>
 
-                <i class="rounded-full w-full text-center hover:underline bg-sky-500 hover:bg-sky-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Moyen
-                </i>
+                </a>
 
-                <i class="rounded-full w-full text-center hover:underline bg-orange-500 hover:bg-orange-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Secondaire
-                </i>
+                </a>
 
             </div>
 
@@ -33,32 +33,32 @@
 
     </div>
 
-    <div class="cursor-pointer rounded-2xl shadow-2xl ">
+    <div class="cursor-pointer rounded-2xl border-2 border-sky-500 bg-white overflow-hidden ">
 
-        <img class="w-full  rounded-t-2xl" src="{{ asset('assets/1.jpg') }}" alt="">
+        <img class="w-full h-1/2 " src="{{ asset('assets/1.jpg') }}" alt="">
 
         <div class="p-4">
             <h2 class="text-2xl font-bold text-center">
-                Titre
+                Elhayet Gambetta
             </h2>
 
-            <div class="grid grid-cols-2 place-items-center gap-2 text-xl text-white ">
+            <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5">
 
-                <i class="rounded-full w-full text-center hover:underline bg-emerald-500 hover:bg-emerald-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Maternel
-                </i>
+                </a>
 
-                <i class="rounded-full w-full text-center hover:underline bg-purple-500 hover:bg-purple-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Primaire
-                </i>
+                </a>
 
-                <i class="rounded-full w-full text-center hover:underline bg-sky-500 hover:bg-sky-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Moyen
-                </i>
+                </a>
 
-                <i class="rounded-full w-full text-center hover:underline bg-orange-500 hover:bg-orange-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Secondaire
-                </i>
+                </a>
 
             </div>
 
@@ -66,24 +66,24 @@
 
     </div>
 
-    <div class="cursor-pointer rounded-2xl shadow-2xl ">
+    <div class="cursor-pointer rounded-2xl border-2 border-sky-500 bg-white overflow-hidden">
 
-        <img class="w-full  rounded-t-2xl" src="{{ asset('assets/1.jpg') }}" alt="">
+        <img class="w-full h-1/2" src="{{ asset('assets/maraval.jpg') }}" alt="">
 
         <div class="p-4">
             <h2 class="text-2xl font-bold text-center">
-                Titre
+               Elhayet Maraval
             </h2>
 
-            <div class="grid grid-cols-2 place-items-center gap-2 text-xl text-white ">
+            <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5 ">
 
-                <i class="rounded-full w-full text-center hover:underline bg-emerald-500 hover:bg-emerald-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Maternel
-                </i>
+                </a>
 
-                <i class="rounded-full w-full text-center hover:underline bg-purple-500 hover:bg-purple-400">
+                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Primaire
-                </i>
+                </a>
 
             </div>
 

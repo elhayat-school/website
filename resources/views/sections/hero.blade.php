@@ -1,26 +1,42 @@
-<div class="w-full py-10 bg-gradient-to-r bg-cover ">
+<div class="w-full bg-gradient-to-r bg-cover ">
 
-    <div class="flex  justify-between flex-col-reverse lg:flex-row">
+    <div class="relative">
 
-        <div class=" lg:px-24 p-5 lg:w-1/2 m-auto">
-
-            <h class="font-bold text-5xl"> Ensemble pour les faire réussir. </h>
-
-            <p class="mt-2 text-justify">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quisquam architecto laboriosam corrupti?
-                Iure
-                commodi ipsa deserunt sapiente delectus cupiditate minima cumque laudantium, accusantium exercitationem
-                blanditiis repellendus recusandae harum voluptates.
-            </p>
-
+        <div class="mySlides w-full h-[500px] lg:h-[700px] object-cover bg-center bg-cover"
+            style="background-image: url({{ asset('assets/1.jpg') }})">
+            <img class="sideshow ">
         </div>
-
-        <div class="pl-5 lg:pl-0 lg:w-1/2 ">
-
-            <img class=" w-[1080px] float-right shadow-2xl rounded-l-[50px] " src="{{ asset('assets/1.jpg') }}">
-
+        <div class="mySlides w-full h-[500px] lg:h-[700px] object-cover bg-center bg-cover"
+            style="background-image: url({{ asset('assets/2.jpg') }})">
+            <img class="sideshow">
+            <div class="bg-gray-500 opacity-70 min-w-full h-1/6 absolute bottom-0 rounded-tr-full ">
+            </div>
+            </i>
+            <i class="absolute bottom-0 text-white text-4xl p-10 text-center w-full ">Ne cherchez pas la perfection Visez
+                la réussite</i>
+        </div>
+        <div class="mySlides w-full h-[500px] lg:h-[700px] object-cover bg-center bg-cover"
+            style="background-image: url({{ asset('assets/pourcentage.jpg') }})">
+            <img class="sideshow">
+        </div>
+        <div class="mySlides w-full h-[500px] lg:h-[700px] object-cover bg-center
+         bg-cover"
+            style="background-image: url({{ asset('assets/3.jpg') }})">
+            <img class="sideshow">
+            <div class="bg-gray-500 opacity-70 min-w-full h-1/6 absolute bottom-0 rounded-tr-full ">
+            </div>
+            <i class="absolute bottom-0 text-white text-4xl p-10 text-center w-full">Soyez courageux !</i>
+        </div>
+        <div class="mySlides w-full h-[500px] lg:h-[700px] object-cover bg-center bg-cover"
+            style="background-image: url({{ asset('assets/color3.jpg') }})">
+            <img class="sideshow">
+            <div class="bg-gray-500 opacity-70 min-w-full h-1/6 absolute bottom-0 rounded-tr-full ">
+            </div>
+            <i class="absolute bottom-0 text-white text-4xl p-10 text-center w-full">Amusez vous à colorier !</i>
         </div>
 
     </div>
 
 </div>
+
+

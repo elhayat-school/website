@@ -1,3 +1,25 @@
+<div class=" w-full flex justify-between bg-[#759CF5] text-white py-2 px-2 md:px-10 items-center">
+    <div class="md:flex space-x-5 hidden">
+        <a href="instagram.com" class="font-white">
+            <img class="w-8" src="{{asset('assets/facebook-brands.svg')}}" alt="">
+        </a>
+        <a href="instagram.com" class="font-white">
+            <img class="w-8" src="{{asset('assets/instagram-brands.svg')}}" alt="">
+        </a>
+    </div>
+    <div class="flex flex-col md:flex-row md:space-x-5 ">
+        <a href="tel:0794662246" class="flex space-x-2 " >
+            <img class="w-5" src="{{asset('assets/phone-solid.svg')}}"/>
+           <p> 0794662246 </p>
+        </a>
+        <a href="mail:ontact@elhayatschool.com" class="flex space-x-2" >
+            <img class="w-5" src="{{asset('assets/envelope-solid.svg')}}"/>
+
+          <p>  contact@elhayatschool.com</p>
+        </a>
+    </div>
+</div>
+
 <nav class="relative lg:px-24 px-4 py-2 lg:py-2 flex justify-between items-center">
 
     <a href="#">
@@ -19,7 +41,7 @@
     </div>
     <ul
         class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
-        <li><a class="text-lg text-white hover:bg-white hover:text-red-500 rounded-md p-2  tracking-tight font-semibold"
+        <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2  tracking-tight font-semibold"
                 href="#">Home</a></li>
         <li class="text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
@@ -29,7 +51,7 @@
             </svg>
         </li>
 
-        <li><a class="text-lg text-white hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
+        <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
                 href="#">Services</a></li>
         <li class="text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
@@ -38,7 +60,7 @@
                     d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
             </svg>
         </li>
-        <li><a class="text-lg text-white hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
+        <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
                 href="#">Pricing</a></li>
         <li class="text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
@@ -47,7 +69,7 @@
                     d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
             </svg>
         </li>
-        <li><a class="text-lg text-white hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
+        <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
                 href="#contact-us-section">Contact</a></li>
     </ul>
 

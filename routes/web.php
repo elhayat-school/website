@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,7 +19,10 @@ Route::get('/', function () {
     return view('pages.landing');
 });
 
+Route::resource('articles', ArticleController::class);
+
 Route::get('/dashboard', function () {
+
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
