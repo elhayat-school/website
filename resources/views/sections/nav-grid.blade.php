@@ -31,28 +31,34 @@
         </div>
     </div>
 
-    <div class="h-[400px] lg:flex bg-white hover:bg-gray-200 rounded-xl shadow-xl hidden order-2">
+    <div class="h-[400px] lg:flex bg-[#5FA7DE]  rounded-xl shadow-xl hidden order-2">
 
-        <a class="relative flex flex-col ">
-            <img class="w-1/2 m-auto " src="{{ asset('assets/logo.png') }}" alt="">
-            <p class=" rounded-b-xl p-4 text-2xl w-full text-center "> El-Hayat School </p>
+        <a class="relative flex flex-col w-full ">
+            <!-- Your embedded video player code -->
+            <div class="fb-video m-auto w-full" data-href="https://fb.watch/deUQlEimEc//" data-width="auto" data-autoplay="true"
+                data-show-text="false">
+            </div>
+            <p class=" rounded-b-xl p-4 text-2xl w-full text-center text-white font-bold "> El-Hayat School </p>
         </a>
 
     </div>
 
     <div class="h-[400px] p-6 bg-white rounded-xl shadow-xl order-1 lg:order-3">
-        <div class=" ">
+
+        <div>
             <h2 class="text-3xl">Présentation</h2>
             <h3 class="uppercase text-xl mt-2">Bienvenue à El-Hayat school</h3>
         </div>
+
         <p class="mt-5">
             EL HAYAT School est un établissement scolaire privé, il assure un enseignement général aux apprenants des
-       trois cycles (primaire, moyen et secondaire).
+            trois cycles (primaire, moyen et secondaire).
         </p>
+
     </div>
-</div>
 
 </div>
+
 
 <script>
     // Automatic Slideshow - change image every 4 seconds

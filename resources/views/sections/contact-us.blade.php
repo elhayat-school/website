@@ -1,21 +1,6 @@
-<div class="w-screen ">
+<div class="w-full">
 
-    <!-- <div class="text-justify bg-black h-[254px] py-10" >
-        <div class="m-auto lg:max-w-6xl lg:p-0 px-4 space-y-10 text-white">
-            <h2 class="font-bold lg:text-4xl text-2xl">
-                Notre Vision
-            </h2>
-
-            <p class="font-bold lg:text-2xl text-xl mt-2">
-                “VOUS SOUHAITEZ NOUS CONTACTER ?
-                 NOTRE ÉQUIPE PÉDAGOGIQUE EST LÀ POUR VOUS !”
-            </p>
-
-        </div>
-
-    </div>-->
-
-    <div class="m-auto lg:max-w-6xl mt-10 xl:mt-20 p-4 ">
+    <div class="m-auto lg:max-w-6xl mt-10  p-4 ">
 
         <h3 class="text-2xl lg:text-3xl font-bold">Contactez-nous</h3>
 
@@ -77,7 +62,7 @@
             </div>
 
             <button
-                class="mt-16 px-10 py-2 bg-[#759CF5] rounded-lg text-2xl  text-white float-right  hover:bg-[#d1ddf8] hover:text-[#759CF5]">
+                class="my-16 px-10 py-2 bg-[#759CF5] rounded-lg text-2xl  text-white float-right  hover:bg-[#d1ddf8] hover:text-[#759CF5]">
                 Envoyer</button>
 
             @if (Session::has('message'))

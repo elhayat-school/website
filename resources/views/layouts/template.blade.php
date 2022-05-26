@@ -11,9 +11,11 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
 </head>
 
-<body class="min-h-screen overflow-x-hidden bg-white ">
+<body class="min-h-screen overflow-x-hidden  ">
 
     @include('sections.menu')
 

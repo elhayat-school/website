@@ -1,4 +1,4 @@
-<div class="flex lg:justify-between flex-col">
+<div class="flex lg:justify-between flex-col lg:flex-row">
 
     <div class="px-2 rounded-2xl ">
 
@@ -42,5 +42,7 @@
 
     </div>
 
+
+</div>
 
 </div>
