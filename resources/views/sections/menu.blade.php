@@ -1,35 +1,38 @@
 <div class=" w-full flex justify-between bg-blue-600 text-white py-2 px-2 md:px-10 items-center">
     <div class="md:flex space-x-5 hidden">
-        <a href="instagram.com" class="font-white">
-            <img class="w-8" src="{{asset('assets/facebook-brands.svg')}}" alt="">
+        <a href="https://www.facebook.com/elhayatschool.dz/">
+            <img class="w-8" src="{{ asset('assets/facebook-brands.svg') }}" alt="">
         </a>
-        <a href="instagram.com" class="font-white">
-            <img class="w-8" src="{{asset('assets/instagram-brands.svg')}}" alt="">
+        <a href="instagram.com">
+            <img class="w-8" src="{{ asset('assets/instagram-brands.svg') }}" alt="">
         </a>
     </div>
     <div class="flex flex-col md:flex-row md:space-x-5 ">
-        <a href="tel:0794662246" class="flex space-x-2 " >
-            <img class="w-5" src="{{asset('assets/phone-solid.svg')}}"/>
-           <p> 0794662246 </p>
+        <a href="tel:0794662246" class="flex space-x-2 ">
+            <img class="w-5" src="{{ asset('assets/phone-solid.svg') }}" />
+            <p> 0794662246 </p>
         </a>
-        <a href="mail:ontact@elhayatschool.com" class="flex space-x-2" >
-            <img class="w-5" src="{{asset('assets/envelope-solid.svg')}}"/>
+        <a href="mail:ontact@elhayatschool.com" class="flex space-x-2">
+            <img class="w-5" src="{{ asset('assets/envelope-solid.svg') }}" />
 
-          <p>  contact@elhayatschool.com</p>
+            <p> contact@elhayatschool.com</p>
         </a>
     </div>
 </div>
 
 <nav class="relative lg:px-24 px-4 py-2 lg:py-2 flex justify-between items-center">
+    <div class="flex justify-between w-full">
 
-    <a href="#">
-        <img class="w-52" src="{{ asset('assets/logo1.png') }}" />
-    </a>
+        <a href="/">
+            <img class="w-52" src="{{ asset('assets/logo1.png') }}" />
+        </a>
 
 
-    <a href="#">
-        <img class="w-52" src="{{ asset('assets/logo2.png') }}" />
-    </a>
+        <a href="/">
+            <img class="w-52" src="{{ asset('assets/logo2.png') }}" />
+        </a>
+
+    </div>
 
     <div class="lg:hidden">
         <button class="navbar-burger flex items-center text-green-500 p-3">
@@ -69,14 +72,14 @@
             </svg>
         </li>
         <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
-            href="#">Services</a></li>
-    <li class="text-gray-300">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-        </svg>
-    </li>
+                href="#">Services</a></li>
+        <li class="text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+            </svg>
+        </li>
 
         <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
                 href="#contact-us-section">Contact</a></li>
@@ -90,8 +93,7 @@
         <div class="flex items-center mb-8">
             <a class="mr-auto text-3xl font-bold leading-none" href="#">
                 <img class=" w-16 bg-white
-                rounded-full"
-                    src="{{ asset('assets/logo/LogoTT.svg') }}" />
+                rounded-full" src="{{ asset('assets/logo.png') }}" />
             </a>
             <button class="navbar-close">
                 <svg class="h-6 w-6 text-white cursor-pointer hover:bg-white hover:text-red-500 rounded-md p-2"

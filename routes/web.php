@@ -23,6 +23,11 @@ Route::get('/founders-word', function () {
     return view('pages.founder-word');
 });
 
+Route::get('/infos', function () {
+    return view('pages.infos');
+});
+
+
 Route::resource('articles', ArticleController::class);
 
 Route::get('/dashboard', function () {

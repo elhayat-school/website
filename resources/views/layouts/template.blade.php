@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="min-h-screen overflow-x-hidden ">
+<body class="min-h-screen overflow-x-hidden">
 
     @include('sections.menu')
 

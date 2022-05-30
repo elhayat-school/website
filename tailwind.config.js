@@ -11,7 +11,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-                nadia: ['Ubuntu', "sans-serif"]
+                nadia: ['Lobster', "cursive"]
             },
 
    keyframes: {
@@ -24,7 +24,7 @@ module.exports = {
 
         animation: {
             wiggle: 'wiggle 1s ease-in-out infinite',
-        }
+            }
 
         },
 
