@@ -19,6 +19,10 @@ Route::get('/', function () {
     return view('pages.landing');
 });
 
+Route::get('/founders-word', function () {
+    return view('pages.founder-word');
+});
+
 Route::resource('articles', ArticleController::class);
 
 Route::get('/dashboard', function () {

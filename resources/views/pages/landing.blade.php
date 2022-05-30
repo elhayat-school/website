@@ -8,7 +8,7 @@
 
         <div class="w-full px-2">
 
-            <div class="py-4">
+            <div class="py-4 max-w-7xl m-auto">
                 @include('sections.nav-grid')
             </div>
 
@@ -17,7 +17,7 @@
                 <h2 class="text-center font-bold text-3xl">Nos Etablissements</h2>
             </div>
 
-            <div class="w-full m-auto mt-10 ">
+            <div class="max-w-7xl m-auto mt-10 ">
                 @include('sections.etablissement')
             </div>
 

@@ -1,4 +1,4 @@
-<div class=" max-w-7xl m-auto grid grid-cols-1 lg:grid-cols-3 gap-5 px-2 ">
+<div class=" grid grid-cols-1 lg:grid-cols-3 gap-5 px-2 ">
 
     <div class="cursor-pointer rounded-2xl border-2 border-sky-500 bg-white overflow-hidden ">
 
@@ -11,9 +11,6 @@
 
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5">
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
-                    Maternel
-                </a>
 
                 <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Primaire
@@ -44,9 +41,6 @@
 
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5">
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
-                    Maternel
-                </a>
 
                 <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Primaire
@@ -76,10 +70,6 @@
             </h2>
 
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5 ">
-
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
-                    Maternel
-                </a>
 
                 <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Primaire

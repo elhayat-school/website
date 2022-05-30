@@ -1,31 +1,31 @@
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-7xl m-auto ">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-5 ">
 
-    <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:h-[400px] rounded-xl order-3 lg:order-1">
-        <div class="bg-gradient-to-br from-cyan-500  to-blue-500 rounded-2xl shadow-lg shadow-blue-500">
-            <a class="m-auto flex lg:flex-col justify-between p-4 items-center h-full ">
-                <p class="mt-2 text-lg text-center text-white font-semibold">Comment s'inscrire</p>
-                <img class="w-24 p-2 lg:m-auto hover:animate-bounce" src="{{ asset('assets/contrat.png') }}" alt="">
+    <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:h-[400px] rounded-2xl order-3 lg:order-1">
+        <div class="border-4 transition ease-in-out border-blue-500 hover:bg-gradient-to-br from-cyan-500  to-blue-500 rounded-2xl hover:text-white ">
+            <a href="/founders-word" class="m-auto flex lg:flex-col justify-between p-4 items-center h-full transition hover:-translate-y-2">
+                <p class="mt-2 text-lg text-center font-semibold">Mot du directeur</p>
+                <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/contrat.png') }}" alt="">
             </a>
         </div>
 
-        <div class="bg-gradient-to-br from-orange-500  to-yellow-500 rounded-2xl shadow-lg shadow-yellow-500">
-            <a class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full ">
-                <p class="mt-2 text-lg text-center text-white font-semibold">Infos Pratiques</p>
-                <img class="w-24 p-2 lg:m-auto hover:animate-bounce" src="{{ asset('assets/info.png') }}" alt="">
+        <div class="border-4 transition ease-in-out border-yellow-500 hover:bg-gradient-to-br from-orange-500  to-yellow-500 rounded-2xl hover:text-white ">
+            <a class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
+                <p class="mt-2 text-lg text-center font-semibold">Infos Pratiques</p>
+                <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/info.png') }}" alt="">
             </a>
         </div>
 
-        <div class="bg-gradient-to-br from-pink-500  to-purple-500 rounded-2xl shadow-lg shadow-purple-500">
-            <a class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full ">
-                <p class="mt-2 text-lg text-center text-white font-semibold">Media</p>
-                <img class="w-24 p-2 lg:m-auto hover:animate-bounce" src="{{ asset('assets/picture.png') }}" alt="">
+        <div class="border-4 transition ease-in-out border-purple-500 hover:bg-gradient-to-br from-pink-500  to-purple-500 rounded-2xl hover:text-white ">
+            <a class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
+                <p class="mt-2 text-lg text-center font-semibold">Media</p>
+                <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/picture.png') }}" alt="">
             </a>
         </div>
 
-        <div class="bg-gradient-to-br from-green-500  to-emerald-500 rounded-2xl shadow-lg shadow-emerald-500">
-            <a class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full ">
-                <p class="mt-2 text-lg text-center text-white font-semibold">Résultats des examens</p>
-                <img class="w-24 p-2 lg:m-auto hover:animate-bounce" src="{{ asset('assets/competition.png') }}"
+        <div class="border-4 transition ease-in-out border-emerald-500 hover:bg-gradient-to-br from-green-500  to-emerald-500 rounded-2xl hover:text-white ">
+            <a class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
+                <p class="mt-2 text-lg text-center font-semibold">Résultats des examens</p>
+                <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/competition.png') }}"
                     alt="">
             </a>
         </div>
