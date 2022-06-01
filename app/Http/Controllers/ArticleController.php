@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StoreArticleRequest;
 use App\Models\Article;
 use App\Models\Media;
 use Illuminate\Http\Request;
@@ -37,34 +38,28 @@ class ArticleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreArticleRequest $request)
     {
-        $request->validate([
-            'title' => 'required|max:20',
-            'content' => 'max:255',
-            'thumbnail' => 'required|mimes:png,jpg,gif,jpeg'
-        ]);
 
        $article = Article::create([
             'title' => $request->title,
             'content' => $request->content,
-            'thumbnail' =>  $request->file('thumbnail')->store('articles/' . $request->title , 'public'),
+            'cover' =>  $request->file('cover')->store('articles/' . $request->title , 'public'),
         ]);
 
-        // $files = [];
-        // if ($request->file('files')){
-        //     foreach($request->file('files') as $key => $file)
-        //     {
-        //         $fileName = time().rand(1,99).'.'.$file->extension();
-        //         $file->move(public_path('uploads'), $fileName);
-        //         $files[]['name'] = $fileName;
-        //     }
-        // }
+         if ($request->hasFile('medias')){
+            foreach($request->file('files') as $file)
+            {
 
-        // foreach ($files as $key => $file) {
-        //     Media::create([$file, 'article_id' => $article->id]);
-        // }
-        return view('dashboard.articles.index');
+              Media::create([
+                  'article_id' => $article->id,
+                  'path' =>  $file->store('articles/' . $article->title . '/media' , 'public'),
+              ]);
+
+            }
+        }
+
+        return to_route('articles.index');
     }
 
     /**

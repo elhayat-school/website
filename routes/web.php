@@ -28,7 +28,7 @@ Route::get('/infos', function () {
 });
 
 
-Route::resource('articles', ArticleController::class);
+Route::resource('articles', ArticleController::class)->middleware('auth');
 
 Route::get('/dashboard', function () {
 
