@@ -8,44 +8,44 @@
 
         <div class="w-full px-2">
 
-            <div class="py-4 max-w-7xl m-auto">
+            <section class="py-4 max-w-7xl m-auto">
                 @include('sections.nav-grid')
-            </div>
+            </section>
 
-            <div class="w-full space-y-5 mt-16">
+            <section class="w-full space-y-5 mt-16">
                 <img class="m-auto w-3/6 lg:w-1/6" src="{{ asset('assets/line.svg') }}" alt="">
                 <h2 class="text-center font-bold text-3xl">Nos Etablissements</h2>
-            </div>
+            </section>
 
-            <div class="max-w-7xl m-auto mt-10 ">
+            <section class="max-w-7xl m-auto mt-10 ">
                 @include('sections.etablissement')
-            </div>
+            </section>
 
-            <div class="w-full space-y-5 mt-16">
+            <section class="w-full space-y-5 mt-16">
                 <img class="m-auto  w-3/6 lg:w-1/6" src="{{ asset('assets/line.svg') }}" alt="">
                 <h2 class="text-center font-bold text-3xl">Nos offres</h2>
-            </div>
+            </section>
 
-            <div class="w-full mt-10 bg-white">
+            <section class="w-full mt-10 bg-white">
                 <div class="max-w-6xl m-auto">
                     @include('sections.marketing')
                 </div>
-            </div>
+            </section>
 
-            <div class="w-full space-y-5 mt-16">
+            <section class="w-full space-y-5 mt-16">
                 <img class="m-auto  w-3/6 lg:w-1/6" src="{{ asset('assets/line.svg') }}" alt="">
                 <h2 class="text-center font-bold text-3xl">Nos partenaires</h2>
-            </div>
+            </section>
 
-            <div class="w-full mt-10 bg-white">
+            <section class="w-full mt-10 bg-white">
                 <div class="max-w-6xl m-auto">
                     @include('sections.cambridge')
                 </div>
-            </div>
+            </section>
 
-            <div class="mt-10">
+            <section class="mt-10">
                 @include('sections.contact-us')
-            </div>
+            </section>
 
         </div>
 

@@ -20,7 +20,7 @@
     </div>
 </div>
 
-<nav class="relative lg:px-24 px-4 py-2 lg:py-2 flex justify-between items-center">
+<nav class="relative xl:px-24 px-4 py-2 lg:py-2 flex justify-between items-center">
     <div class="flex justify-between w-full">
 
         <a href="/">

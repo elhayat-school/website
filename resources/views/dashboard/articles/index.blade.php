@@ -12,7 +12,7 @@
 
                     @foreach ($articles as $article )
                     @dump($article->title)
-                    @dump($article->media->path)
+                    @dump($article->content)
                     @endforeach
 
                 </div>
