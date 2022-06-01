@@ -34,10 +34,7 @@
     <div class="h-[400px] lg:flex bg-[#5FA7DE]  rounded-xl shadow-xl hidden order-2">
 
         <a class="relative flex flex-col w-full ">
-            <!-- Your embedded video player code -->
-            <div class="fb-video m-auto w-full" data-href="https://fb.watch/deUQlEimEc//" data-width="auto" data-autoplay="true"
-                data-show-text="false">
-            </div>
+            <x-fb-video data-href="https://fb.watch/deUQlEimEc//"> </x-fb-video>
             <p class=" rounded-b-xl p-4 text-2xl w-full text-center text-white font-bold "> El-Hayat School </p>
         </a>
 
