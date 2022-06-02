@@ -16,7 +16,7 @@
                     Primaire
                 </a>
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
+                <a href="{{route('pages.moyen')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Moyen
                 </a>
 
@@ -46,7 +46,7 @@
                     Primaire
                 </a>
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
+                <a href="{{route('pages.moyen')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Moyen
                 </a>
 
