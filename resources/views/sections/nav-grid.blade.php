@@ -2,14 +2,14 @@
 
     <div class="grid lg:grid-cols-2 grid-cols-1 gap-5 lg:h-[400px] rounded-2xl order-3 lg:order-1">
         <div class="border-4 transition ease-in-out duration-100 border-blue-500 hover:bg-gradient-to-br from-cyan-500  to-blue-500 rounded-2xl hover:text-white">
-            <a href="/founders-word" class="m-auto flex lg:flex-col justify-between p-4 items-center h-full transition hover:-translate-y-2">
+            <a href="{{route('pages.founders_word')}}" class="m-auto flex lg:flex-col justify-between p-4 items-center h-full transition hover:-translate-y-2">
                 <p class="mt-2 text-lg text-center font-semibold">Mot du directeur</p>
                 <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/contrat.png') }}" alt="">
             </a>
         </div>
 
         <div class="border-4 transition ease-in-out duration-100 border-yellow-500 hover:bg-gradient-to-br from-orange-500  to-yellow-500 rounded-2xl hover:text-white">
-            <a href="/infos" class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
+            <a href="{{route('pages.infos')}}" class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
                 <p class="mt-2 text-lg text-center font-semibold">Infos Pratiques</p>
                 <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/info.png') }}" alt="">
             </a>
@@ -23,7 +23,7 @@
         </div>
 
         <div class="border-4 transition ease-in-out duration-100 border-emerald-500 hover:bg-gradient-to-br from-green-500  to-emerald-500 rounded-2xl hover:text-white">
-            <a href="/resultexams" class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
+            <a href="{{route('pages.exams_result')}}" class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
                 <p class="mt-2 text-lg text-center font-semibold">Résultats des examens</p>
                 <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/competition.png') }}"
                     alt="">

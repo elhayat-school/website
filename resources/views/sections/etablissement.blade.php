@@ -12,7 +12,7 @@
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5">
 
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
+                <a href="{{route('pages.primaire')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Primaire
                 </a>
 
@@ -42,7 +42,7 @@
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5">
 
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
+                <a  href="{{route('pages.primaire')}}"  class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Primaire
                 </a>
 
@@ -71,7 +71,7 @@
 
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5 ">
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
+                <a href="{{route('pages.primaire')}}"  class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Primaire
                 </a>
 
