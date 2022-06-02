@@ -5,7 +5,7 @@
     <x-page src="{{ asset('assets/2.JPG') }}">
 
         <x-slot:title>
-            {{ 'Primaire' }}
+            {{ 'Moyen' }}
         </x-slot:title>
 
         La scolarité au collège comporte quatre années de la 1ère AM à la 4ème AM  La classe de 1ère AM doit permettre aux

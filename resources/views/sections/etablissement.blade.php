@@ -20,7 +20,7 @@
                     Moyen
                 </a>
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
+                <a  href="{{route('pages.secondaire')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Secondaire
                 </a>
 
@@ -50,7 +50,7 @@
                     Moyen
                 </a>
 
-                <a class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
+                <a  href="{{route('pages.secondaire')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Secondaire
                 </a>
 

@@ -25,7 +25,11 @@ Route::view('infos', 'pages.infos')->name('pages.infos');
 Route::view('resultexams', 'pages.resultexams')->name('pages.exams_result');
 
 Route::view('primaire', 'pages.primaire')->name('pages.primaire');
+
 Route::view('Moyen', 'pages.moyen')->name('pages.moyen');
+
+Route::view('Secondaire', 'pages.secondaire')->name('pages.secondaire');
+
 
 
 
