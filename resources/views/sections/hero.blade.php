@@ -1,4 +1,4 @@
-<div class="w-full bg-gradient-to-r bg-cover ">
+<div class="w-full bg-gradient-to-r bg-cover">
 
     <div class="relative">
 

@@ -1,4 +1,3 @@
-@props(['src'])
 
 <div class="w-full relative">
 

@@ -11,12 +11,13 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
 
 </head>
 
 <body class="min-h-screen overflow-x-hidden">
-
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
     @include('sections.menu')
 
     @yield('content')

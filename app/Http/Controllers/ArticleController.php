@@ -97,8 +97,6 @@ class ArticleController extends Controller
 
     }
 
-
-
     /**
      * Remove the specified resource from storage.
      *
@@ -108,5 +106,10 @@ class ArticleController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function showGrid()
+    {
+        Article::take(9)->orderby('created_at')->get();
     }
 }

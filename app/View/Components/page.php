@@ -6,7 +6,7 @@ use Illuminate\View\Component;
 
 class page extends Component
 {
-    public $src, $title;
+    public $src;
     /**
      * Create a new component instance.
      *

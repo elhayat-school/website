@@ -23,7 +23,7 @@
         </div>
 
         <div class="border-4 transition ease-in-out duration-100 border-emerald-500 hover:bg-gradient-to-br from-green-500  to-emerald-500 rounded-2xl hover:text-white">
-            <a class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
+            <a href="/resultexams" class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
                 <p class="mt-2 text-lg text-center font-semibold">Résultats des examens</p>
                 <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/competition.png') }}"
                     alt="">
@@ -34,7 +34,9 @@
     <div class="h-[400px] lg:flex bg-[#5FA7DE]  rounded-xl shadow-xl hidden order-2">
 
         <a class="relative flex flex-col w-full ">
+
             <x-fb-video data-href="https://fb.watch/deUQlEimEc//"> </x-fb-video>
+
             <p class=" rounded-b-xl p-4 text-2xl w-full text-center text-white font-bold "> El-Hayat School </p>
         </a>
 

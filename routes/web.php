@@ -27,6 +27,10 @@ Route::get('/infos', function () {
     return view('pages.infos');
 });
 
+Route::get('/resultexams', function () {
+    return view('pages.resultexams');
+});
+
 
 Route::resource('articles', ArticleController::class)->middleware('auth');
 

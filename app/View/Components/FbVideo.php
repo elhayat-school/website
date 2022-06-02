@@ -6,15 +6,15 @@ use Illuminate\View\Component;
 
 class FbVideo extends Component
 {
-
+    public $dataHref;
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($dataHref)
     {
-
+        $this->dataHref = $dataHref;
     }
 
     /**
