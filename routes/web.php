@@ -1,8 +1,9 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
+
+require __DIR__.'/auth.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -15,28 +16,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.landing');
+Route::view('', 'pages.landing')->name('pages.landing');
+
+Route::view('founders-word', 'pages.founder-word')->name('pages.founders_word');
+
+Route::view('infos', 'pages.infos')->name('pages.infos');
+
+Route::view('resultexams', 'pages.resultexams')->name('pages.exams_result');
+
+Route::view('primaire', 'pages.primaire')->name('pages.primaire');
+
+
+Route::middleware('auth')->group(function () {
+
+    Route::resource('articles', ArticleController::class);
+
+    Route::view('dashboard', 'dashboard')->name('dashboard');
 });
 
-Route::get('/founders-word', function () {
-    return view('pages.founder-word');
-});
-
-Route::get('/infos', function () {
-    return view('pages.infos');
-});
-
-Route::get('/resultexams', function () {
-    return view('pages.resultexams');
-});
-
-
-Route::resource('articles', ArticleController::class)->middleware('auth');
-
-Route::get('/dashboard', function () {
-
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
-require __DIR__.'/auth.php';
