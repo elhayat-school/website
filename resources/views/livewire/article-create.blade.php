@@ -16,11 +16,12 @@
                 <textarea title="content" name="content" placeholder="contenu" id="editor" class="h-52 mt-5 w-full"> </textarea>
             </div>
 
-            <div class="lg:row-span-2">
-
+            <div class="container lg:row-span-2">
+                <x-input id="cover" name="cover" type="file" wire:model="cover" accept=".jpg,.png"
+                class="m-auto" />
                 @if ($cover)
                     Photo de couverture:
-                    <img src="{{ $cover->temporaryUrl() }}" class="lg:my-5 my-2 rounded-lg border-4 p-5 border-gray-400">
+                    <img src="{{ $cover->temporaryUrl() }}" class="lg:my-5 my-2 rounded-lg  border-4 p-5 border-gray-400">
                 @else
                     <div class="my-5 p-5 w-full h-72 flex flex-col justify-center border-4 border-gray-400 rounded-lg">
 
@@ -37,9 +38,6 @@
                                 <path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
                             </svg>
                         </div>
-
-                        <x-input name="cover" type="file" wire:model="cover" accept=".jpg,.png"
-                            class="m-auto" />
 
                     </div>
 

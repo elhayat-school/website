@@ -12,15 +12,15 @@
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5">
 
 
-                <a href="{{route('pages.primaire')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
+                <a href="/primaire" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Primaire
                 </a>
 
-                <a href="{{route('pages.moyen')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
+                <a href="/moyen" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Moyen
                 </a>
 
-                <a  href="{{route('pages.secondaire')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
+                <a  href="/secondaire" class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Secondaire
                 </a>
 
@@ -42,15 +42,15 @@
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5">
 
 
-                <a  href="{{route('pages.primaire')}}"  class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
+                <a href="/primaire"   class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Primaire
                 </a>
 
-                <a href="{{route('pages.moyen')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
+                <a href="/moyen" class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Moyen
                 </a>
 
-                <a  href="{{route('pages.secondaire')}}" class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
+                <a href="/secondaire"   class="rounded-md w-full text-center hover:underline border-sky-500 border-2 ">
                     Secondaire
                 </a>
 
@@ -69,9 +69,9 @@
                Elhayet Maraval
             </h2>
 
-            <div class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5 ">
+            <div href="/primaire"  class="grid grid-cols-2 place-items-center gap-2 text-xl test-sky-500 mt-5 ">
 
-                <a href="{{route('pages.primaire')}}"  class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
+                <a   class="rounded-md w-full text-center hover:underline border-sky-500 border-2">
                     Primaire
                 </a>
 

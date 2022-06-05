@@ -6,7 +6,6 @@ use App\Http\Requests\StoreArticleRequest;
 use App\Models\Article;
 use App\Models\Media;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class ArticleController extends Controller
 {
@@ -40,22 +39,19 @@ class ArticleController extends Controller
      */
     public function store(StoreArticleRequest $request)
     {
-
-       $article = Article::create([
+        $article = Article::create([
             'title' => $request->title,
             'content' => $request->content,
-            'cover' =>  $request->file('cover')->store('articles/' . $request->title , 'public'),
+            'cover' =>  $request->file('cover')->store('articles/' . $request->title, 'public'),
         ]);
 
-         if ($request->hasFile('medias')){
-            foreach($request->file('files') as $file)
-            {
+        if ($request->hasFile('medias')) {
+            foreach ($request->file('medias') as $file) {
 
-              Media::create([
-                  'article_id' => $article->id,
-                  'path' =>  $file->store('articles/' . $article->title . '/media' , 'public'),
-              ]);
-
+                Media::create([
+                    'article_id' => $article->id,
+                    'path' =>  $file->store('articles/' . $article->title . '/media', 'public'),
+                ]);
             }
         }
 
@@ -70,7 +66,11 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        //
+        $article = Article::find($id);
+
+
+
+        return view('pages.article')->with('article', $article);
     }
 
     /**
@@ -94,7 +94,6 @@ class ArticleController extends Controller
     public function update(Request $request, $id)
 
     {
-
     }
 
     /**

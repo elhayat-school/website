@@ -1,9 +1,9 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\PagesController;
+use App\Models\Article;
 use Illuminate\Support\Facades\Route;
-
-require __DIR__.'/auth.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -16,27 +16,35 @@ require __DIR__.'/auth.php';
 |
 */
 
-Route::view('', 'pages.landing')->name('pages.landing');
 
-Route::view('founders-word', 'pages.founder-word')->name('pages.founders_word');
+Route::get('/', [PagesController::class, 'landing'])->name('landing');
+Route::get('/dashboard', [PagesController::class, 'dashboard'])->name('dashboard');
 
-Route::view('infos', 'pages.infos')->name('pages.infos');
-
-Route::view('resultexams', 'pages.resultexams')->name('pages.exams_result');
-
-Route::view('primaire', 'pages.primaire')->name('pages.primaire');
-
-Route::view('Moyen', 'pages.moyen')->name('pages.moyen');
-
-Route::view('Secondaire', 'pages.secondaire')->name('pages.secondaire');
-
-
-
-
-Route::middleware('auth')->group(function () {
-
-    Route::resource('articles', ArticleController::class);
-
-    Route::view('dashboard', 'dashboard')->name('dashboard');
+Route::get('/founder-word', function () {
+    return view('pages.founder-word');
 });
 
+Route::get('/infos', function () {
+    return view('pages.infos');
+});
+
+Route::get('/resultexams', function () {
+    return view('pages.resultexams');
+});
+
+Route::get('/primaire', function () {
+    return view('pages.primaire');
+});
+
+Route::get('/moyen', function () {
+    return view('pages.moyen');
+});
+
+Route::get('/secondaire', function () {
+    return view('pages.secondaire');
+});
+
+Route::resource('articles', ArticleController::class)->middleware('auth')->except('show');
+Route::get('/article/{article}', [ArticleController::class, 'show'])->name('articles.show');
+
+require __DIR__.'/auth.php';

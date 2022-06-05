@@ -25,7 +25,7 @@ class StoreArticleRequest extends FormRequest
     {
         return [
             'title' => 'required|max:20',
-            'content' => 'required|max:255',
+            'content' => 'required',
             'cover' => 'required|mimes:png,jpg,gif,jpeg'
         ];
     }

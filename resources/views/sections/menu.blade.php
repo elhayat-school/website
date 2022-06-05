@@ -23,12 +23,12 @@
 <nav class="relative xl:px-24 px-4 py-2 lg:py-2 flex justify-between items-center">
     <div class="flex justify-between w-full">
 
-        <a href="{{route('pages.landing')}}">
+        <a href="/">
             <img class="w-52" src="{{ asset('assets/logo1.png') }}" />
         </a>
 
 
-        <a href="{{route('pages.landing')}}">
+        <a href="/">
             <img class="w-52" src="{{ asset('assets/logo2.png') }}" />
         </a>
 

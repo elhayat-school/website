@@ -12,7 +12,8 @@
          permettre aux élèves d’accéder aux outils fondamentaux de la connaissance. Les élèves découvrent l’apprentissage d’une langue vivante,
         le programme prévoit des enseignements pour questionner le monde, une éducation physique et sportive et un enseignement moral et civique.
     </br>
-    Email :
+    Email :    </br>
+
     Téléphone :
 
     </x-page>

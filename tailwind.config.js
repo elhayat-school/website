@@ -13,22 +13,32 @@ module.exports = {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
                 nadia: ['Lobster', "cursive"]
             },
+            colors: {
+                'bluepurple': '#759cf5',
+            },
 
-   keyframes: {
+            keyframes: {
 
-        wiggle: {
-            '0%, 100%': { transform: 'rotate(-3deg)' },
-            '50%': { transform: 'rotate(3deg)' },
-          }
-    },
+                wiggle: {
+                    '0%, 100%': {
+                        transform: 'rotate(-3deg)'
+                    },
+                    '50%': {
+                        transform: 'rotate(3deg)'
+                    },
+                }
+            },
 
-        animation: {
-            wiggle: 'wiggle 1s ease-in-out infinite',
+            animation: {
+                wiggle: 'wiggle 1s ease-in-out infinite',
             }
 
         },
 
 
     },
-    plugins: [require('@tailwindcss/forms')],
+    plugins: [
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/line-clamp'),
+    ],
 };

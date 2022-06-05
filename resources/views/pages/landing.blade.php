@@ -12,19 +12,21 @@
                 @include('sections.nav-grid')
             </section>
 
-            <section class="w-full space-y-5 mt-16">
-                <img class="m-auto w-3/6 lg:w-1/6" src="{{ asset('assets/line.svg') }}" alt="">
-                <h2 class="text-center font-bold text-3xl">Nos Etablissements</h2>
-            </section>
+            <x-section-title> Nos Etablissement </x-section-title>
 
             <section class="max-w-7xl m-auto mt-10 ">
                 @include('sections.etablissement')
             </section>
 
-            <section class="w-full space-y-5 mt-16">
-                <img class="m-auto  w-3/6 lg:w-1/6" src="{{ asset('assets/line.svg') }}" alt="">
-                <h2 class="text-center font-bold text-3xl">Nos offres</h2>
+            <x-section-title> Nos Actualitées </x-section-title>
+
+            <section class="w-full mt-10">
+                <div class="max-w-7xl m-auto">
+                @include('sections.actuality')
+                </div>
             </section>
+
+            <x-section-title> Nos offres </x-section-title>
 
             <section class="w-full mt-10 bg-white">
                 <div class="max-w-6xl m-auto">
@@ -32,18 +34,15 @@
                 </div>
             </section>
 
-            <section class="w-full space-y-5 mt-16">
-                <img class="m-auto  w-3/6 lg:w-1/6" src="{{ asset('assets/line.svg') }}" alt="">
-                <h2 class="text-center font-bold text-3xl">Nos partenaires</h2>
-            </section>
+            <x-section-title> Nos Partenaire </x-section-title>
 
-            <section class="w-full mt-10 bg-white">
+            <section class="w-full mt-10">
                 <div class="max-w-6xl m-auto">
                     @include('sections.cambridge')
                 </div>
             </section>
 
-            <section class="mt-10">
+            <section class="w-full mt-10">
                 @include('sections.contact-us')
             </section>
 
