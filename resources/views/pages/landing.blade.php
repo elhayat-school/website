@@ -43,16 +43,14 @@
                 </div>
             </section>
 
-
-
             <section class="mt-10">
                 @include('sections.contact-us')
             </section>
 
         </div>
 
-
     </article>
+
     <footer class="bg-slate-100 ">
 
         @include('sections.footer')

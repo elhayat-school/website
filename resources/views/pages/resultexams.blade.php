@@ -15,8 +15,6 @@
 
                 <img class="w-full h-full " src="{{ asset('assets/result1.jpg') }}" alt="">
 
-
-
             </div>
 
             <div class="cursor-pointer rounded-2xl border-2 border-sky-500 bg-white overflow-hidden ">
@@ -30,10 +28,7 @@
                 <img class="w-full h-full" src="{{ asset('assets/result3.jpg') }}" alt="">
 
 
-                </div>
-
             </div>
-
 
 
         </div>

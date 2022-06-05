@@ -12,10 +12,11 @@
         et les connaissances nécessaires à la maîtrise des valeurs et attitudes requises pour réussir sa scolarité, sa vie d’individu
         et de futur citoyen. Au lycée, les élèves consolident leurs apprentissages
          dans ces domaines selon leurs choix de filière (les sciences et la technologie, l’histoire et la géographie, les langues, l’économie…)
-    </br>@auth
+    </br>
+
     Email : </br>
     Téléphone :
-    @endauth
+
     </x-page>
 
 @endsection
