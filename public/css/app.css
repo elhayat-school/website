@@ -475,6 +475,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   order: 2;
 }.order-1{
   order: 1;
+}.order-last{
+  order: 9999;
 }.col-span-2{
   grid-column: span 2 / span 2;
 }.row-span-3{
@@ -505,6 +507,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }.ml-3{
   margin-left: 0.75rem;
 }.-ml-px{
@@ -707,6 +712,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }.grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}.grid-cols-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
 }.grid-rows-3{
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }.flex-col{
@@ -1529,11 +1536,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     order: 1;
   }.lg\:order-3{
     order: 3;
+  }.lg\:order-first{
+    order: -9999;
+  }.lg\:col-span-2{
+    grid-column: span 2 / span 2;
+  }.lg\:row-span-2{
+    grid-row: span 2 / span 2;
   }.lg\:m-auto{
     margin: auto;
   }.lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
+  }.lg\:my-5{
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
   }.lg\:ml-11{
     margin-left: 2.75rem;
   }.lg\:mr-8{
@@ -1588,6 +1604,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: flex-end;
   }.lg\:justify-between{
     justify-content: space-between;
+  }.lg\:gap-10{
+    gap: 2.5rem;
   }.lg\:space-x-6 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(1.5rem * var(--tw-space-x-reverse));

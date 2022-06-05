@@ -10,6 +10,7 @@ class ArticleCreate extends Component
     use WithFileUploads;
 
     public $cover;
+    public $medias = [];
 
     public function render()
     {
