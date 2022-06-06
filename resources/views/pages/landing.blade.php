@@ -22,7 +22,7 @@
 
             <section class="w-full mt-10">
                 <div class="max-w-7xl m-auto">
-                @include('sections.actuality')
+                @include('sections.articles-grid')
                 </div>
             </section>
 
