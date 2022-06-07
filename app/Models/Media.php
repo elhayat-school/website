@@ -9,8 +9,10 @@ class Media extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-       'article_id',
-       'media'
-    ];
+    protected $guarded = ['id'];
+
+    public function article()
+    {
+        return $this->belongsTo(Article::class);
+    }
 }

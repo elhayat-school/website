@@ -14,4 +14,9 @@ class Article extends Model
         'content',
         'cover',
     ];
+
+    public function medias()
+    {
+        return $this->hasMany(Media::class);
+    }
 }

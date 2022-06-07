@@ -22,7 +22,11 @@
 <body class="font-sans antialiased">
     <div class="min-h-screen bg-gray-100">
 
-        @include('layouts.navigation')
+        <div class="absolute left-0">
+
+            @include('layouts.sidebar')
+
+        </div>
 
         <!-- Page Heading -->
         <header class="bg-white shadow">

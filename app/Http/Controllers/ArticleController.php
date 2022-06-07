@@ -46,11 +46,10 @@ class ArticleController extends Controller
         ]);
 
         if ($request->hasFile('medias')) {
-            foreach ($request->file('medias') as $file) {
-
-                Media::create([
+            foreach ($request->file('medias') as $media) {
+              $media =  Media::create([
                     'article_id' => $article->id,
-                    'path' =>  $file->store('articles/' . $article->title . '/media', 'public'),
+                    'path' =>  $media->store('articles/' . $article->title . '/media', 'public'),
                 ]);
             }
         }
@@ -67,8 +66,6 @@ class ArticleController extends Controller
     public function show($id)
     {
         $article = Article::find($id);
-
-
 
         return view('pages.article')->with('article', $article);
     }
@@ -109,6 +106,6 @@ class ArticleController extends Controller
 
     public function showGrid()
     {
-        Article::take(9)->orderby('created_at')->get();
+        Article::with('media')->take(9)->orderby('created_at')->get();
     }
 }
