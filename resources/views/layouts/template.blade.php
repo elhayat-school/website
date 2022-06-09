@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="scroll-smooth">
 
 <head>
 
@@ -11,13 +11,13 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-
-
 </head>
 
-<body class="min-h-screen overflow-x-hidden">
+<body class="relative min-h-screen max-w-screen overflow-x-clip">
+
     <div id="fb-root"></div>
     <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
     @include('sections.menu')
 
     @yield('content')

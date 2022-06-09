@@ -4,7 +4,7 @@
 
         <img class="mx-auto hover:object-top " src="{{ asset('assets/logo-cambridge.png') }}" alt="">
 
-        <p class="px-5 py-5">Le groupe scolaire "EL HAYAT SCHOOL" est partenaire avec "CAMBRIDGE ASSESSMENT ENGLISH"
+        <p class="px-5 py-5 ">Le groupe scolaire "EL HAYAT SCHOOL" est partenaire avec "CAMBRIDGE ASSESSMENT ENGLISH"
             et est certifié pour préparer les examens.
             Nous développons les compétences des élèves grace à un programme Cambridge très motivant selon le CECRL (
             Cadre européen commun de référence pour les langues).

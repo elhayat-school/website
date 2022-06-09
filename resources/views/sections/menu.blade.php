@@ -86,7 +86,7 @@
             </svg>
         </li>
         <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
-                href="#">Etablissements</a></li>
+                href="#our-establishements">Etablissements</a></li>
         <li class="text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                 viewBox="0 0 24 24">
@@ -135,7 +135,7 @@
 
                 <li class="mb-1">
                     <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"
-                        href="#">Etablissements</a>
+                        href="#our-establishements">Etablissements</a>
                 </li>
                 <li class="mb-1">
                     <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"

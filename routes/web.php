@@ -44,7 +44,7 @@ Route::get('/secondaire', function () {
     return view('pages.secondaire');
 });
 
-Route::resource('articles', ArticleController::class)->middleware('auth')->except('show');
+Route::resource('dashboard/articles', ArticleController::class)->middleware('auth')->except('show');
 Route::get('/article/{article}', [ArticleController::class, 'show'])->name('articles.show');
 
 require __DIR__.'/auth.php';

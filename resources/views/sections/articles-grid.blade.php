@@ -3,12 +3,17 @@
     @foreach ($articles as $article)
 
         <div class="w-full relative border-4 border-bluepurple grid grid-cols-1 bg-white shadow-xl h-60 overflow-y-hidden">
+
             <div class="w-full h-60 overflow-hidden">
-                <img src="{{ asset('storage/' . $article->cover) }}" alt="" class="w-full h-full object-cover transition ease-in-out delay-100 duration-700 lg:hover:scale-150 ">
+                <img src="{{ asset('storage/' . $article->cover) }}" alt="" class="w-full h-full object-cover transition ease-in-out delay-100 duration-700 hover:scale-110 ">
             </div>
+
             <div class="w-full h-full absolute bottom-0 translate-y-44  bg-bluepurple bg-opacity-80 text-white transition ease-in-out delay-100 duration-200
                 hover:-translate-y-0 flex flex-col justify-between content-center" >
-                <h3 class="text-2xl font-semibold px-2 pt-2"  dir="auto"> {{ $article->title }} </h3>
+                <h3 class="text-2xl font-semibold px-2 pt-2 truncate "  dir="auto"> {{ $article->title }} </h3>
+                <div class="w-full h-1 bg-white">
+
+                </div>
                 <p class="line-clamp-3 px-2"  dir="auto">{{ $article->content }}</p>
                 <a href="{{ route('articles.show', $article->id) }}" class="flex space-x-2 underline p-2 text-white bg-bluepurple">
                     Lire la suite
@@ -17,8 +22,10 @@
                         <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18"></path>
                         <line x1="13" y1="8" x2="15" y2="8"></line>
                         <line x1="13" y1="12" x2="15" y2="12"></line>
-                     </svg></a>
+                     </svg>
+                </a>
             </div>
+
         </div>
     @endforeach
 

@@ -41,18 +41,20 @@
 
                 <div class="flex flex-col space-y-10">
                     <input name="name" type="text"
-                        class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:outline-none focus:border-bg-[#759CF5] focus:ring-bg-[#759CF5] "
+                        class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:outline-none focus:border-bg-bluepurple focus:ring-bg-bluepurple "
                         placeholder="Nom complet" />
 
-                    <input name="email" type="email"
-                        class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:border-bg-[#759CF5] focus:ring-bg-[#759CF5]"
-                        placeholder="E-Mail" />
+                        <select class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:outline-none focus:border-bg-bluepurple focus:ring-bg-bluepurple " >
+                            <option value="valeur1" selected>Etablissement</option>
+                            <option value="valeur2" >Valeur 2</option>
+                            <option value="valeur3">Valeur 3</option>
+                          </select>
 
                     <input name="company" type="text"
-                        class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:border-bg-[#759CF5] focus:ring-bg-[#759CF5]"
+                        class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:border-bg-bluepurple focus:ring-bg-bluepurple"
                         placeholder="Objet" />
 
-                    <textarea name="object" class=" grow bg-neutral-300 w-full rounded-lg p-5 text-xl focus:border-bg-[#759CF5] focus:ring-bg-[#759CF5] resize-none"
+                    <textarea name="object" class=" grow bg-neutral-300 w-full rounded-lg p-5 text-xl focus:border-bg-bluepurple focus:ring-bg-bluepurple resize-none"
                         placeholder="Votre Message..."></textarea>
                 </div>
 
@@ -62,7 +64,7 @@
             </div>
 
             <button
-                class="my-16 px-10 py-2 bg-[#759CF5] rounded-lg text-2xl  text-white float-right  hover:bg-[#d1ddf8] hover:text-[#759CF5]">
+                class="my-16 px-10 py-2 bg-bluepurple rounded-lg text-2xl  text-white float-right  hover:bg-[#d1ddf8] hover:text-[#759CF5]">
                 Envoyer</button>
 
             @if (Session::has('message'))
