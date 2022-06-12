@@ -15,7 +15,9 @@ module.exports = {
             },
             colors: {
                 'bluepurple': '#759cf5',
-                'alicoblue': '#f0f8ff'
+                'alicoblue': '#f0f8ff',
+                'littleboyblue': '#5FA7DE',
+                'marojelblue':'#5F64DE',
             },
 
             keyframes: {
