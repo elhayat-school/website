@@ -10,10 +10,7 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 bg-white border-b border-gray-200">
 
-                    @foreach ($articles as $article )
-                    @dump($article->title)
-                    @dump($article->content)
-                    @endforeach
+                    @livewire('articles-table')
 
                 </div>
             </div>

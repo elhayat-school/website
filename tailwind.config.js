@@ -18,6 +18,11 @@ module.exports = {
                 'alicoblue': '#f0f8ff',
                 'littleboyblue': '#5FA7DE',
                 'marojelblue':'#5F64DE',
+                //Dashboard
+                'policeblue':'#384B75',
+                'lavenderblue' :'#C0D1F7',
+                'blackcoral' :'#5B6375',
+                'glaucous' : '#5D7BC2',
             },
 
             keyframes: {
