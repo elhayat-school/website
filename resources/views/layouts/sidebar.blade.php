@@ -43,7 +43,7 @@
                         </a>
                     </li>
                     <li class="flex space-x-2 ml-1 mt-5 w-5/6">
-                        <div class="bg-alicoblue w-1 h-22 rounded-full">
+                        <div class="bg-alicoblue w-0.5 h-22 rounded-full">
 
                         </div>
                         <div class=" flex flex-col space-y-2">
