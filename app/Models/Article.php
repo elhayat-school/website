@@ -9,11 +9,7 @@ class Article extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'title',
-        'content',
-        'cover',
-    ];
+    protected $guarded = [];
 
     public function medias()
     {

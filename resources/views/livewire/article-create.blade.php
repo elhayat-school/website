@@ -13,7 +13,12 @@
                 <x-label for="title" :value="__('Titre')" />
                 <x-input id="title" class="block w-full" type="text" name="title" :value="old('title')" required
                     autofocus />
+
                 <textarea title="content" name="content" placeholder="contenu" id="editor" class="h-52 mt-5 w-full"> </textarea>
+
+                <x-label for="fb_video" :value="__('Lien vidéo facebook')" />
+
+                <x-input id="fb_video" class="block w-full" type="text" name="fb_video" :value="old('fb_video')" />
             </div>
 
             <div class="container lg:row-span-2">

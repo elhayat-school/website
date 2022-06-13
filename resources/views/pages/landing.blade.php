@@ -29,7 +29,7 @@
             <x-section id="our-establishements" >
 
                 <x-slot:section_title >
-                    Nos etablissement
+                    Nos etablissements
                 </x-slot:section_title>
 
                 <x-slot:right_png class="w-28 mr-5 rotate-45">
@@ -48,7 +48,7 @@
             <x-section >
 
                 <x-slot:section_title>
-                    Nos Actualité
+                    Nos Actualités
                 </x-slot:section_title>
 
                 <x-slot:right_png class="w-28 mr-5 mt-52">

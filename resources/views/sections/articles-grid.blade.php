@@ -10,8 +10,11 @@
 
             <div class="w-full h-full absolute bottom-0 translate-y-44  bg-bluepurple bg-opacity-80 text-white transition ease-in-out delay-100 duration-200
                 hover:-translate-y-0 flex flex-col justify-between content-center" >
-                <h3 class="text-2xl font-semibold px-2 pt-2 truncate "  dir="auto"> {{ $article->title }} </h3>
-                <div class="w-full h-1 bg-white">
+                <div>
+                    <h3 class=" md:text-xl text-lg font-semibold px-2 pt-2 truncate "  dir="auto"> {{ $article->title }} </h3>
+                    <div class="w-full h-0.5 mt-6 rounded-full bg-white">
+
+                </div>
 
                 </div>
                 <p class="line-clamp-3 px-2"  dir="auto">{{ $article->content }}</p>

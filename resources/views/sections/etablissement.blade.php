@@ -32,7 +32,7 @@
 
     <div class="cursor-pointer rounded-2xl border-2 border-green-500 bg-white overflow-hidden ">
 
-        <img class="w-full h-1/2 " src="{{ asset('assets/1.jpg') }}" alt="">
+        <img class="w-full h-1/2 " src="{{ asset('assets/gambetta.jpg') }}" alt="">
 
         <div class="p-4">
             <h2 class="text-2xl font-bold text-center">

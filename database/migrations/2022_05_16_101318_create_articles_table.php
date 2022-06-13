@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
+            $table->string('fb_video')->nullable();
             $table->string('title');
             $table->longText('content')->nullable();
             $table->string('cover');

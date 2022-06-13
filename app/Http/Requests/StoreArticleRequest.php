@@ -25,9 +25,9 @@ class StoreArticleRequest extends FormRequest
     {
         return [
             'title' => 'required|max:80',
-            'content' => 'required',
+            'content' => '',
             'cover' => 'required|mimes:png,jpg,gif,jpeg',
-
+            'fb_video' => 'nullable|URL'
         ];
     }
 }

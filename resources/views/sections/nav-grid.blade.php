@@ -36,7 +36,7 @@
 
         <a class="relative flex flex-col w-full ">
 
-            <x-fb-video data-href="https://fb.watch/deUQlEimEc//"> </x-fb-video>
+            <x-fb-video class="m-auto w-full" data-href="https://fb.watch/deUQlEimEc//"> </x-fb-video>
 
             <p class=" rounded-b-xl p-4 text-2xl w-full text-center text-white font-bold "> El-Hayat School </p>
         </a>

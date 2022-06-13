@@ -40,7 +40,8 @@ class ArticleController extends Controller
         $article = Article::create([
             'title' => $request->title,
             'content' => $request->content,
-            'cover' =>  $request->file('cover')->store('articles/' . $request->title, 'public'),
+            'cover' =>  $request->file('cover')->store('articles/', 'public'),
+            'fb_video' => $request->fb_video,
         ]);
 
         if ($request->hasFile('medias')) {
