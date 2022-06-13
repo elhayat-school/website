@@ -10,6 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+
 </head>
 
 <body class="relative min-h-screen max-w-screen overflow-x-clip">
