@@ -19,6 +19,11 @@
                 <x-label for="fb_video" :value="__('Lien vidéo facebook')" />
 
                 <x-input id="fb_video" class="block w-full" type="text" name="fb_video" :value="old('fb_video')" />
+
+                <x-label for="video" :value="__('Vidéo')" />
+
+                <x-input id="video" name="video" type="file" wire:model="video" accept=".avi,.mp4"
+                    class="m-auto" />
             </div>
 
             <div class="container lg:row-span-2">
@@ -45,10 +50,10 @@
 
                         </div>
 
-                            <!-- Progress Bar -->
-                            <div x-show="isUploading">
-                                <progress max="100" x-bind:value="progress" class="w-full"></progress>
-                            </div>
+                        <!-- Progress Bar -->
+                        <div x-show="isUploading">
+                            <progress max="100" x-bind:value="progress" class="w-full"></progress>
+                        </div>
                     @endif
                 </div>
 

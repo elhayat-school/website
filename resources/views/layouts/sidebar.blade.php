@@ -15,7 +15,7 @@
         <div class="px-4 ">
             <div class="flex items-center justify-between">
                 <a href="/" role="link" class=" p-2 bg-glaucous rounded-lg ">
-                    <img class="w-20"  src="{{ asset('assets/logo.png') }}" alt="quicklist logo" />
+                    <img class="w-20"  src="{{ asset('assets/logo.png') }}" alt="logo" />
                 </a>
                 <button aria-label="close sidebar" onclick="openSidebar(true)"
                     class="rounded-md focus:ring-2 focus:outline-none focus-ring-offset-2 focus:ring-gray-400 focus:bg-gray-100 hover:bg-bluepurple ml-8 cursor-pointer">
@@ -47,12 +47,10 @@
 
                         </div>
                         <div class=" flex flex-col space-y-2">
-                            <a class="w-full  border-b">
+                            <a href="{{ route('articles.create') }}" class="w-full">
                                 Ecrire un article
                             </a>
-                            <a class="  border-b">
-                                Voire tout les article
-                            </a>
+
                         </div>
                     </li>
 

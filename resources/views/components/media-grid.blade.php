@@ -1,12 +1,12 @@
 @props(['medias'])
 
-<div x-data="{ imgModal: false, imgModalSrc: '' }" {{ $attributes->merge(['class' => 'container  gap-2 mt-10 border-2 border-bluepurple rounded-lg p-2 overflow-hidden']) }}>
+<div x-data="{ imgModal: false, imgModalSrc: '' }" {{ $attributes->merge(['class' => 'container gap-2 mt-10 border-2 border-bluepurple rounded-lg p-2 overflow-hidden']) }}>
 <!-- Act only according to that maxim whereby you can, at the same time, will that it should become a universal law. - Immanuel Kant -->
 @foreach($medias as $media)
 
     <a @click="$dispatch('img-modal', {  imgModalSrc: '{{ asset('storage/'.$media->path )}}' })"
-        class="cursor-pointer h-40 overflow-clip">
-        <img src="{{ asset('storage/'.$media->path) }}" alt="Placeholder" class="w-full h-40 object-cover object-center transition ease-in-out duration-700 hover:scale-110">
+        class="cursor-pointer h-20 md:h-40 overflow-clip rounded-xl ">
+        <img src="{{ asset('storage/'.$media->path) }}" alt="Placeholder" class="w-full h-full object-cover object-center transition ease-in-out duration-700 hover:scale-110">
     </a>
 
 @endforeach
@@ -32,7 +32,7 @@
                 </button>
             </div>
             <div class="p-2">
-                <img :alt="imgModalSrc" class="object-contain w-[500px] h-1/2-screen" :src="imgModalSrc">
+                <img :alt="imgModalSrc" class="object-contain w-fit" :src="imgModalSrc">
             </div>
         </div>
     </div>

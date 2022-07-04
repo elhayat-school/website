@@ -36,19 +36,19 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(StoreArticleRequest $request)
-    {
-        $article = Article::create([
+    { $article = Article::create([
             'title' => $request->title,
             'content' => $request->content,
             'cover' =>  $request->file('cover')->store('articles/', 'public'),
             'fb_video' => $request->fb_video,
+            'video' => $request->file('video')->store('articles/video', 'public'),
         ]);
 
         if ($request->hasFile('medias')) {
             foreach ($request->file('medias') as $media) {
               $media =  Media::create([
                     'article_id' => $article->id,
-                    'path' =>  $media->store('articles/' . $article->title . '/media', 'public'),
+                    'path' =>  $media->store('articles/'.$article->id.'/media', 'public'),
                 ]);
             }
         }
@@ -99,7 +99,8 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Article::where('id', $id)->delete();
+        return redirect()->route('articles.index');
     }
 
     public function showGrid()

@@ -12,17 +12,17 @@
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl mt-5">
 
 
-                <a href="/primaire" class="rounded-md w-full text-center hover:underline border-green-500 border-2">
+                <div class="rounded-md w-full text-center hover:underline border-green-500 border-2">
                     Primaire
-                </a>
+                </div>
 
-                <a href="/moyen" class="rounded-md w-full text-center hover:underline border-green-500 border-2">
+                <div class="rounded-md w-full text-center hover:underline border-green-500 border-2">
                     Moyen
-                </a>
+                </div>
 
-                <a  href="/secondaire" class="rounded-md w-full text-center hover:underline border-green-500 border-2">
+                <div   class="rounded-md w-full text-center hover:underline border-green-500 border-2">
                     Secondaire
-                </a>
+                </div>
 
             </div>
 
@@ -42,17 +42,17 @@
             <div class="grid grid-cols-2 place-items-center gap-2 text-xl mt-5">
 
 
-                <a href="/primaire"   class="rounded-md w-full text-center hover:underline border-green-500 border-2 ">
+                <div class="rounded-md w-full text-center hover:underline border-green-500 border-2 ">
                     Primaire
-                </a>
+                </div>
 
-                <a href="/moyen" class="rounded-md w-full text-center hover:underline border-green-500 border-2 ">
+                <div class="rounded-md w-full text-center hover:underline border-green-500 border-2 ">
                     Moyen
-                </a>
+                </div>
 
-                <a href="/secondaire"   class="rounded-md w-full text-center hover:underline border-green-500 border-2 ">
+                <div    class="rounded-md w-full text-center hover:underline border-green-500 border-2 ">
                     Secondaire
-                </a>
+                </div>
 
             </div>
 
@@ -69,11 +69,11 @@
                Elhayet Maraval
             </h2>
 
-            <div href="/primaire"  class="grid grid-cols-2 place-items-center gap-2 text-xl mt-5 ">
+            <div class="grid grid-cols-2 place-items-center gap-2 text-xl mt-5 ">
 
-                <a   class="rounded-md w-full text-center hover:underline border-green-500 border-2">
+                <div  class="rounded-md w-full text-center hover:underline border-green-500 border-2">
                     Primaire
-                </a>
+                </div>
 
             </div>
 

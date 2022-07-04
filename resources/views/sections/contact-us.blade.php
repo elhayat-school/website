@@ -1,79 +1,78 @@
-<div class="w-full">
+<div class="m-auto lg:max-w-6xl mt-12 p-4 border-2 rounded-lg border-green-700">
 
-    <div class="m-auto lg:max-w-6xl mt-10  p-4 ">
+    <h3 class="text-2xl lg:text-3xl font-bold">Contactez-nous</h3>
 
-        <h3 class="text-2xl lg:text-3xl font-bold">Contactez-nous</h3>
+    <form action="{{ route('submitContactForm') }}" method="get">
 
-        <form action="" method="get">
-            @error('name')
-                <div class="font-bold text-red-300 text-xl">
+        <div class="grid xl:grid-flow-col gap-y-8 gap-x-14  grid-cols-1 xl:grid-cols-2 mt-12">
 
-                    {{ $message }}
+            <div class="flex flex-col">
+                <input name="name" type="text"
+                    class="bg-neutral-200 w-full rounded-lg p-5 text-xl focus:outline-none focus:border-bg-bluepurple focus:ring-bg-bluepurple "
+                    placeholder="Nom complet" required  />
+                @error('name')
+                    <div class="mt-2 font-bold text-red-500 text-sm">
 
-                </div>
-            @enderror
+                        {{$message}}
 
-            @error('company')
-                <div class="font-bold text-red-300 text-xl">
+                    </div>
+                @enderror
+                <select name="establishement" required
+                    class="mt-12 bg-neutral-200 w-full rounded-lg p-5 text-xl focus:outline-none focus:border-bg-bluepurple focus:ring-bg-bluepurple ">
+                    <option value="">Etablissement</option>
+                    <option value="contact.sabah.web@elhayatschool.com">Administration Es-Sabah</option>
+                    <option value="contact.gambetta.web@elhayatschool.com">Administration Gambetta</option>
+                    <option value="contact.gambetta.web@elhayatschool.com">Administration Gambetta Primaire</option>
+                    <option value="contact.gambetta.web@elhayatschool.com">Administration Maraval</option>
+                </select>
 
-                    {{ $message }}
+                @error('establishement')
+                    <div class="mt-2 font-bold text-red-500 text-sm">
 
-                </div>
-            @enderror
+                        {{ $message }}
 
+                    </div>
+                @enderror
+                <input name="object" type="text" required
+                    class="mt-12 bg-neutral-200 w-full rounded-lg p-5 text-xl focus:border-bg-bluepurple focus:ring-bg-bluepurple"
+                    placeholder="Objet" />
 
-            @error('email')
-                <div class="font-bold text-red-300 text-xl">
+                @error('object')
+                    <div class="mt-2 font-bold text-red-500 text-sm">
 
-                    {{ $message }}
+                        {{ $message }}
 
-                </div>
-            @enderror
+                    </div>
+                @enderror
+                <textarea name="content" required
+                    class="mt-12 grow bg-neutral-200 w-full rounded-lg p-5 text-xl focus:border-bg-bluepurple focus:ring-bg-bluepurple resize-none"
+                    placeholder="Votre Message..."></textarea>
+                    @error('content')
+                    <div class="mt-2 font-bold text-red-500 text-sm">
 
-            @error('object')
-                <div class="font-bold text-red-300 text-xl">
+                        {{ $message }}
 
-                    {{ $message }}
-
-                </div>
-            @enderror
-            <div class="grid xl:grid-flow-col gap-y-8 gap-x-14  grid-cols-1 xl:grid-cols-2  mt-10">
-
-                <div class="flex flex-col space-y-10">
-                    <input name="name" type="text"
-                        class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:outline-none focus:border-bg-bluepurple focus:ring-bg-bluepurple "
-                        placeholder="Nom complet" />
-
-                        <select class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:outline-none focus:border-bg-bluepurple focus:ring-bg-bluepurple " >
-                            <option value="valeur1" selected>Etablissement</option>
-                            <option value="valeur2" >Valeur 2</option>
-                            <option value="valeur3">Valeur 3</option>
-                          </select>
-
-                    <input name="company" type="text"
-                        class="bg-neutral-300 w-full rounded-lg p-5 text-xl focus:border-bg-bluepurple focus:ring-bg-bluepurple"
-                        placeholder="Objet" />
-
-                    <textarea name="object" class=" grow bg-neutral-300 w-full rounded-lg p-5 text-xl focus:border-bg-bluepurple focus:ring-bg-bluepurple resize-none"
-                        placeholder="Votre Message..."></textarea>
-                </div>
-
-                <img class="hidden lg:flex w-full p-2 lg:m-full " src="{{ asset('assets/contact-us.gif') }}" alt="">
-
-
+                    </div>
+                @enderror
+                <button type="submit"
+                    class="my-5 px-10 py-2 bg-green-600 rounded-lg text-2xl text-white hover:bg-green-700">
+                    Envoyer
+                </button>
             </div>
 
-            <button
-                class="my-16 px-10 py-2 bg-bluepurple rounded-lg text-2xl  text-white float-right  hover:bg-[#d1ddf8] hover:text-[#759CF5]">
-                Envoyer</button>
 
-            @if (Session::has('message'))
-                <div class="font-bold text-red text-3xl">
-                    {{ Session('message') }}
-                </div>
-            @endif
-        </form>
+            <img src="assets/letter.png" alt="logo" class="w-full hidden lg:block">
 
-    </div>
+
+
+        </div>
+
+        @if (Session::has('message'))
+            <div class="font-bold text-red text-3xl">
+                {{ Session('message') }}
+            </div>
+        @endif
+
+    </form>
 
 </div>

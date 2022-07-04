@@ -1,22 +1,30 @@
-<div class=" w-full flex justify-between bg-blue-600 text-white py-2 px-2 md:px-10 items-center">
-    <div class="md:flex space-x-5 hidden">
-        <a href="https://www.facebook.com/elhayatschool.dz/">
-            <img class="w-8" src="{{ asset('assets/facebook-brands.svg') }}" alt="">
+<div class="w-full flex flex-col-reverse lg:flex-row justify-between bg-blue-600 text-white py-2 px-2 md:px-10 ">
+    <div class="flex space-x-1 lg:space-x-5 ">
+        <a href="https://www.facebook.com/elhayatschool.dz/" >
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+              </svg>
         </a>
-        <a href="instagram.com">
-            <img class="w-8" src="{{ asset('assets/instagram-brands.svg') }}" alt="">
+        <a href="https://www.instagram.com/el_hayet_school/">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
         </a>
     </div>
     <div class="flex flex-col md:flex-row md:space-x-5 ">
-        <a href="tel:0794662246" class="flex space-x-2 ">
-            <img class="w-5" src="{{ asset('assets/phone-solid.svg') }}" />
-            <p> 0794662246 </p>
+        <a href="tel:0794662246" class="lg:flex items-center space-x-2 hidden ">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="12" r="9" />
+                <polyline points="12 7 12 12 15 15" />
+              </svg>
+            <p class="text-base lg:text-lg"> Ouvert de 8h à 12h et de 13h30  à 16h </p>
         </a>
-        <a href="mail:ontact@elhayatschool.com" class="flex space-x-2">
-            <img class="w-5" src="{{ asset('assets/envelope-solid.svg') }}" />
 
-            <p> contact@elhayatschool.com</p>
-        </a>
     </div>
 </div>
 
@@ -24,18 +32,17 @@
     <div class="flex justify-between w-full">
 
         <a href="/">
-            <img class="w-52" src="{{ asset('assets/logo1.png') }}" />
+            <img class="w-32 lg:w-52" src="{{ asset('assets/logo1.png') }}" alt="logo" />
         </a>
 
-
         <a href="/">
-            <img class="w-52" src="{{ asset('assets/logo2.png') }}" />
+            <img class="w-32 lg:w-52" src="{{ asset('assets/logo2.png') }}" alt="logo"/>
         </a>
 
     </div>
 
     <div class="lg:hidden">
-        <button class="navbar-burger flex items-center text-green-500 p-3">
+        <button class="navbar-burger flex items-center text-green-600 p-3">
             <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
@@ -44,58 +51,7 @@
     <ul
         class="hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2  lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6 z-50">
         <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2  tracking-tight font-semibold"
-                href="#">Accueil</a></li>
-        <li class="text-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-            </svg>
-        </li>
-
-        <!-- Settings Dropdown -->
-        <li class="hidden sm:flex sm:items-center sm:ml-6 z-50">
-            <x-dropdown align="right" width="48">
-                <x-slot name="trigger">
-                    <button
-                        class="flex items-center text-lg font-medium  hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                        <div>Cycles</div>
-
-                        <div class="ml-1">
-                            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                    </button>
-                </x-slot>
-
-                <x-slot name="content">
-                    <a href="" class="p-2">Primaire</a>
-                </x-slot>
-
-            </x-dropdown>
-        </li>
-
-        <li class="text-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-            </svg>
-        </li>
-        <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
-                href="#our-establishements">Etablissements</a></li>
-        <li class="text-gray-300">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
-                viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
-            </svg>
-        </li>
-        <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
-                href="#">Services</a></li>
+                href="/">Accueil</a></li>
         <li class="text-gray-300">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
                 viewBox="0 0 24 24">
@@ -105,7 +61,26 @@
         </li>
 
         <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
-                href="#contact-us-section">Contact</a></li>
+                href="/#our-establishements">Etablissements</a></li>
+        <li class="text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+            </svg>
+        </li>
+        <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
+                href="/#articles">Nos Actualités</a></li>
+        <li class="text-gray-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" class="w-4 h-4 current-fill"
+                viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 5v0m0 7v0m0 7v0m0-13a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" />
+            </svg>
+        </li>
+
+        <li><a class="text-lg text-black hover:bg-white hover:text-red-500 rounded-md p-2 tracking-tight font-semibold"
+                href="/#contact-us-section">Contact</a></li>
     </ul>
 
 </nav>
@@ -115,8 +90,8 @@
     <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-lg py-6 px-6 bg-white border-r overflow-y-auto">
         <div class="flex items-center mb-8">
             <a class="mr-auto text-3xl font-bold leading-none" href="#">
-                <img class=" w-16 bg-white
-                rounded-full" src="{{ asset('assets/logo.png') }}" />
+                <img class=" w-full bg-white
+                rounded-full" src="{{ asset('assets/logo1.png') }}" alt="logo"/>
             </a>
             <button class="navbar-close">
                 <svg class="h-6 w-6 text-white cursor-pointer hover:bg-white hover:text-red-500 rounded-md p-2"
@@ -129,21 +104,21 @@
         <div>
             <ul>
                 <li class="mb-1">
-                    <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"
-                        href="#">Accueil</a>
+                    <a  href="/" class="block p-4 text-lg font-semibold  hover:bg-green-700 hover:text-white rounded"
+                        href="§">Accueil</a>
                 </li>
 
                 <li class="mb-1">
-                    <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"
-                        href="#our-establishements">Etablissements</a>
+                    <a  href="#our-establishements" class="block p-4 text-lg font-semibold  hover:bg-green-700 hover:text-white rounded"
+                        href="/#our-establishements">Etablissements</a>
                 </li>
                 <li class="mb-1">
-                    <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"
-                        href="#">Services</a>
+                    <a class="block p-4 text-lg font-semibold  hover:bg-green-700 hover:text-white rounded"
+                        href="/#articles">Nos Actualités</a>
                 </li>
                 <li class="mb-1">
-                    <a class="block p-4 text-lg font-semibold text-red-500 hover:bg-red-500 hover:text-white rounded"
-                        href="#">Contact</a>
+                    <a class="block p-4 text-lg font-semibold  hover:bg-green-700 hover:text-white rounded"
+                        href="/#contact-us-section">Contact</a>
                 </li>
             </ul>
         </div>

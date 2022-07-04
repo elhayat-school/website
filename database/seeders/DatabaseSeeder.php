@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
         DB::table('users')->insert([
             'name' => 'dev',
-            'email' => 'i@i.i',
-            'password' => Hash::make('123'),
+            'email' => 'webmaster@elhayatschool.com',
+            'password' => Hash::make('9894A1E002a*/'),
         ]);
     }
 }

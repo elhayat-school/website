@@ -7,18 +7,22 @@
             {{ $article->title }}
         </x-slot:title>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-10 gap-y-10 max-w-6xl m-auto" dir="auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-10 gap-y-10 w-full m-auto" dir="auto">
 
             <div class="lg:col-span-2">
                     @if(!is_null($article->fb_video))
                     <x-fb-video class="w-full shadow-xl" data-href=" {{ $article->fb_video }}">
                     </x-fb-video>
+                    @elseif(!is_null($article->video))
+                    <video  width="700" height="700" controls autoplay  muted>
+                        <source src="{{asset('storage/'.$article->video)}}">
+                    </video>
                     @else
                     <img src="{{ asset('storage/' . $article->cover) }}" alt="cover">
                     @endif
             </div>
 
-            <p class="text-lg lg:ml-5 text-justify font-bold" dir="auto">
+            <p class="text-lg lg:ml-5 text-justify  font-bold" dir="auto">
                 {{ $article->content }}
             </p>
 

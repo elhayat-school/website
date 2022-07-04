@@ -11,7 +11,8 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
-                nadia: ['Lobster', "cursive"]
+                nadia: ['Lobster', "cursive"],
+                amiri : ['Amiri', 'serif'],
             },
             colors: {
                 'bluepurple': '#759cf5',
