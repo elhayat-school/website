@@ -36,25 +36,21 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(StoreArticleRequest $request)
-    { $article = Article::create([
-            'title' => $request->title,
-            'content' => $request->content,
-            'cover' =>  $request->file('cover')->store('articles/', 'public'),
-            'fb_video' => $request->fb_video,
-            'video' => $request->file('video')->store('articles/video', 'public'),
-        ]);
+    {
 
-        if ($request->hasFile('medias')) {
-            foreach ($request->file('medias') as $media) {
-              $media =  Media::create([
-                    'article_id' => $article->id,
-                    'path' =>  $media->store('articles/'.$article->id.'/media', 'public'),
-                ]);
-            }
-        }
+        // $article = Article::create([
+        //     'title' => $request->title,
+        //     'content' => $request->content,
+        // ]);
 
-        return to_route('articles.index');
+        // // if ($request->hasFile('video')) {
+        // //        $article->video = $request->file('video')->store('articles/video', 'public');
+        // //        $article->save();
+        // // }
+
+        // return  view('dashboard.articles.create-media')->with('article', $article);
     }
+
 
     /**
      * Display the specified resource.
@@ -65,7 +61,7 @@ class ArticleController extends Controller
     public function show($id)
     {
         $article = Article::find($id);
-        return view('pages.article')->with('article', $article);
+        return view('pages.article-details')->with('article', $article);
     }
 
     /**
@@ -76,7 +72,7 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('dashboard.articles.edit');
     }
 
     /**

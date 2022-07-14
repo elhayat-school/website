@@ -20,7 +20,7 @@
         x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90"
         x-on:click.away="imgModalSrc = ''"
         class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
-        <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-auto">
+        <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-hidden">
             <div class="z-50">
                 <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
                     <svg class="fill-current text-white " xmlns="http://www.w3.org/2000/svg" width="18" height="18"
@@ -32,7 +32,7 @@
                 </button>
             </div>
             <div class="p-2">
-                <img :alt="imgModalSrc" class="object-contain w-fit" :src="imgModalSrc">
+                <img :alt="imgModalSrc" class="max-w-sm object-scale-down" :src="imgModalSrc">
             </div>
         </div>
     </div>

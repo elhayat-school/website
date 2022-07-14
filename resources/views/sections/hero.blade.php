@@ -2,8 +2,8 @@
 
     <div class="relative">
 
-        <div class="mySlides w-full h-[300px] lg:h-[700px] object-cover bg-center bg-cover"
-            style="background-image: url({{ asset('assets/1.webp') }})">
+        <div class="mySlides w-full h-[300px] lg:h-[700px]  object-cover bg-center bg-cover"
+            style="background-image: url({{ asset('assets/1.webp')}})">
 
         </div>
 

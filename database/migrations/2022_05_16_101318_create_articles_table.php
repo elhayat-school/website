@@ -16,10 +16,11 @@ return new class extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('cover');
+            $table->string('cover')->nullable();
             $table->longText('content')->nullable();
             $table->string('fb_video')->nullable();
             $table->string('video')->nullable();
+            $table->string('author')->default('EL_HAYAT_SCHOOL');
             $table->timestamps();
         });
     }

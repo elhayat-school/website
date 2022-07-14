@@ -27,14 +27,14 @@
             </a>
         </div>
 
-        <div
-            class="border-4 transition ease-in-out duration-100 bg-slate-100 grayscale border-emerald-500 hover:bg-gradient-to-br from-green-500  to-emerald-500 rounded-2xl hover:text-white">
+        <a href="/resultexams"
+            class="border-4 transition ease-in-out duration-100 bg-slate-100 border-emerald-500 hover:bg-gradient-to-br from-green-500  to-emerald-500 rounded-2xl hover:text-white">
             <div
                 class="m-auto flex lg:flex-col justify-between  p-4 items-center h-full transition hover:-translate-y-2">
                 <p class="mt-2 text-lg text-center font-semibold">Résultats des examens</p>
                 <img class="w-24 p-2 lg:m-auto" src="{{ asset('assets/competition.png') }}" alt="">
             </div>
-        </div>
+        </a>
     </div>
 
     <div class="h-[400px] flex bg-littleboyblue  rounded-xl shadow-xl  order-2">

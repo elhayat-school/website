@@ -11,7 +11,6 @@ class Article extends Model
 
     protected $guarded = [];
 
-
     public function medias()
     {
         return $this->hasMany(Media::class);

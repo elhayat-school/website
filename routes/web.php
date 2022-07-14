@@ -37,7 +37,7 @@ Route::get('/dashboard', [PagesController::class, 'dashboard'])->name('dashboard
 Route::resource('dashboard/articles', ArticleController::class)->middleware('auth')->except('show');
 
 //View Articles
-Route::get('/article/{article}', [ArticleController::class, 'show'])->name('articles.show');
+Route::get('/article/el-hayat_school/{article}', [ArticleController::class, 'show'])->name('articles.show');
 
 
 //Contact

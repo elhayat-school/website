@@ -4,21 +4,21 @@
 
     <x-article-validation-errors />
 
-    <form method="POST" action="{{ route('articles.store') }}" enctype="multipart/form-data">
-        @csrf
+    <form  wire:submit.prevent="submit">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
 
             <div>
                 <x-label for="title" :value="__('Titre')" />
-                <x-input id="title" class="block w-full" type="text" name="title" :value="old('title')" required
+
+                <x-input id="title" class="block w-full" type="text" name="title" :value="old('title')" wire:model="title" required
                     autofocus />
 
-                <textarea title="content" name="content" placeholder="contenu" id="editor" class="h-52 mt-5 w-full"> </textarea>
+                <textarea  id="content" name="content" placeholder="contenu" id="editor" class="h-52 mt-5 w-full" wire:model="content"> </textarea>
 
                 <x-label for="fb_video" :value="__('Lien vidéo facebook')" />
 
-                <x-input id="fb_video" class="block w-full" type="text" name="fb_video" :value="old('fb_video')" />
+                <x-input id="fb_video" class="block w-full" type="text" name="fb_video" :value="old('fb_video')" wire:model="fb_video" />
 
                 <x-label for="video" :value="__('Vidéo')" />
 
