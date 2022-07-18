@@ -10,15 +10,15 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-10 gap-y-10 w-full m-auto" dir="auto">
 
             <div class="lg:col-span-2">
-                    @if(!is_null($article->fb_video))
+                    @if(!empty($article->fb_video))
                     <x-fb-video class="w-full shadow-xl" data-href=" {{ $article->fb_video }}">
                     </x-fb-video>
-                    @elseif(!is_null($article->video))
+                    @elseif(!empty($article->video))
                     <video  width="700" height="700" controls autoplay  muted>
                         <source src="{{asset('storage/'.$article->video)}}">
                     </video>
                     @else
-                    <img src="{{ asset('storage/' . $article->cover) }}" alt="cover" class="max-w-md">
+                    <img src="{{ asset('storage/' . $article->cover) }}" alt="cover" class="object-contain max-w-lg max-h-[700px] ">
                     @endif
             </div>
 

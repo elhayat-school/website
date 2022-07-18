@@ -25,28 +25,33 @@ class ArticleCreate extends Component
         'fb_video' => 'nullable|URL'
     ];
 
+
     public function submit()
     {
         $this->validate();
 
+        $date = date('Y-m-d');
+
         $article = Article::create([
             'title' => $this->title,
             'content' => $this->content,
-            'cover' =>  $this->cover->store('articles/', 'public'),
+            'cover' =>  $this->cover->store('articles/'.$date, 'public'),
             'fb_video' => $this->fb_video,
 
         ]);
+
         foreach ($this->medias as $media) {
-            $media =  Media::create([
+         $media =  Media::create([
                 'article_id' => $article->id,
-                'path' =>  $media->store('articles/' . $article->id . '/media', 'public'),
+                'path' =>  $media->store('articles/'.$date.'/'.$article->id. '/media', 'public'),
             ]);
         }
 
         if ($this->video != null) {
-            $article->video = $this->video->store('articles/video', 'public');
+            $article->video = $this->video->store('articles/'.$date.'/'.$article->id.'/video', 'public');
             $article->save();
         }
+
         return to_route('articles.index');
     }
 

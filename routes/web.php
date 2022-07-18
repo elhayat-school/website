@@ -4,7 +4,6 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\MediaController;
 use App\Http\Controllers\PagesController;
-use App\Models\Article;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -37,7 +36,7 @@ Route::get('/dashboard', [PagesController::class, 'dashboard'])->name('dashboard
 Route::resource('dashboard/articles', ArticleController::class)->middleware('auth')->except('show');
 
 //View Articles
-Route::get('/article/el-hayat_school/{article}', [ArticleController::class, 'show'])->name('articles.show');
+Route::get('/article/el_hayat_school_news{article}', [ArticleController::class, 'show'])->name('articles.show');
 
 
 //Contact

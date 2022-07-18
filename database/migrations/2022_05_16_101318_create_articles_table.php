@@ -20,7 +20,7 @@ return new class extends Migration
             $table->longText('content')->nullable();
             $table->string('fb_video')->nullable();
             $table->string('video')->nullable();
-            $table->string('author')->default('EL_HAYAT_SCHOOL');
+            $table->string('author')->default('EL HAYAT SCHOOL');
             $table->timestamps();
         });
     }

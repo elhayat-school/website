@@ -57,10 +57,9 @@
                     @endif
                 </div>
 
-
-
                 <div>
                     <x-label for="medias[]" :value="__('Media')" />
+
                     <input name="medias[]" type="file" multiple="multiple" accept=".jpg,.png,.mp4"
                         wire:model="medias" />
                 </div>

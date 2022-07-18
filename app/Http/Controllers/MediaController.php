@@ -16,7 +16,7 @@ class MediaController extends Controller
     public function index()
     {
 
-      $mediasByArticle =  Media::with('article')->get()->groupBy('article_id');
+      $mediasByArticle =  Media::with('article')->orderByDesc('created_at')->get()->groupBy('article_id');
 
         return view('pages.medias')->with('mediasByArticle', $mediasByArticle);
     }

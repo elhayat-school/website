@@ -31,8 +31,8 @@
                     </svg>
                 </button>
             </div>
-            <div class="p-2">
-                <img :alt="imgModalSrc" class="max-w-sm object-scale-down" :src="imgModalSrc">
+            <div class="p-2 container">
+                <img :alt="imgModalSrc" class="object-contain" :src="imgModalSrc">
             </div>
         </div>
     </div>

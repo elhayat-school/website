@@ -14,6 +14,13 @@
             <div class="cursor-pointer rounded-2xl border-2 border-sky-500 bg-white overflow-hidden ">
 
                 <img class="w-full h-full " src="{{ asset('assets/podiumbem.png') }}" alt="img">
+                <img class="w-full h-full " src="{{ asset('assets/podiumbem.png') }}" alt="img">
+                <img class="w-full h-full " src="{{ asset('assets/podiumbem.png') }}" alt="img">
+                <img class="w-full h-full " src="{{ asset('assets/podiumbem.png') }}" alt="img">
+                <img class="w-full h-full " src="{{ asset('assets/podiumbem.png') }}" alt="img">
+                <img class="w-full h-full " src="{{ asset('assets/podiumbem.png') }}" alt="img">
+                <img class="w-full h-full " src="{{ asset('assets/podiumbem.png') }}" alt="img">
+                <img class="w-full h-full " src="{{ asset('assets/podiumbem.png') }}" alt="img">
 
             </div>
 
