@@ -1,8 +1,10 @@
-@component('mail::message')
+<div>
 
-    <p>Name: {{$data['name']}}</p>
-    <p>Etablissement: {{$data['establishement']}}</p>
-    <p>objet: {{$data['object']}}</p>
-    <p>Object: {{$data['content']}}</p>
+    <h2>Nom: {{$data['name']}}</h2>
+    <br>
+    <h2>Envoyer a : {{$data['establishement']}}</h2>
+    <br>
+    <h3>objet: {{$data['object']}}</h3>
+    <p> {{$data['content']}}</p>
 
-@endcomponent
+</div>

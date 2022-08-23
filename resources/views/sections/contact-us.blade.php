@@ -23,7 +23,7 @@
                     <option value="contact.sabah.web@elhayatschool.com">Administration Es-Sabah</option>
                     <option value="contact.gambetta.web@elhayatschool.com">Administration Gambetta</option>
                     <option value="contact.gambetta.web@elhayatschool.com">Administration Gambetta Primaire</option>
-                    <option value="contact.gambetta.web@elhayatschool.com">Administration Maraval</option>
+                    <option value="contact.maraval.web@elhayatschool.com">Administration Maraval</option>
                 </select>
 
                 @error('establishement')
