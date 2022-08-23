@@ -19,7 +19,7 @@
         x-transition:enter-end="opacity-100 transform scale-100" x-transition:leave="transition ease-in duration-300"
         x-transition:leave-start="opacity-100 transform scale-100" x-transition:leave-end="opacity-0 transform scale-90"
         x-on:click.away="imgModalSrc = ''"
-        class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-75">
+        class="p-2 fixed w-full h-100 inset-0 z-50 overflow-hidden flex justify-center items-center bg-black bg-opacity-25">
         <div @click.away="imgModal = ''" class="flex flex-col max-w-3xl max-h-full overflow-hidden">
             <div class="z-50">
                 <button @click="imgModal = ''" class="float-right pt-2 pr-2 outline-none focus:outline-none">
